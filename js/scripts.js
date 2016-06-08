@@ -37,10 +37,8 @@ $(document).ready(function() {
       $("#world").show();
     }
     else {
-      alert("Earn some money and come back!")
+      alert("Please enter the duration of your stay!")
     }
-
-
 
     event.preventDefault();
 

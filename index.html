@@ -12,51 +12,58 @@
     <div class="background-1">
       <div id="start" class="container container-1">
         <div class="flex">
-          <form id="dest">
-            <div class="form-group">
-              <label for="name">Your name: </label>
-              <input id="name" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="date">Start date: </label>
-              <input id="date" class="form-control" type="date">
-            </div>
-            <div class="form-group">
-              <label for="duration">Duration of stay: </label>
-              <input id="duration" class="form-control" type="number">
-            </div>
-            <div class="">
-              <label for="activities">Activities: </label>
-              <select class="form-control" id="activities">
-                <option value="sport">sport</option>
-                <option value="sights">sights</option>
-                <option value="beach">beach</option>
-              </select>
+          <div class="col-md-9">
+            <h1>Welcome to the place of your dream!</h1>
+            <br>
+            <h3>Please make your choice and get the destinations for the next vacation.</h3>
+          </div>
+          <div class="col-md-3">
+            <form id="dest">
+              <div class="form-group">
+                <label for="name">Your name: </label>
+                <input id="name" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="date">Start date: </label>
+                <input id="date" class="form-control" type="date">
+              </div>
+              <div class="form-group">
+                <label for="duration">Duration of stay: </label>
+                <input id="duration" class="form-control" type="number">
               </div>
               <div class="">
-                <label for="radioButton">Package: </label>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="packages" value="flight" checked>
-                    flyght only
-                  </label>
+                <label for="activities">Activities: </label>
+                <select class="form-control" id="activities">
+                  <option value="sport">sport</option>
+                  <option value="sights">sights</option>
+                  <option value="beach">beach</option>
+                </select>
                 </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="packages" value="full">
-                    full package
-                  </label>
+                <div class="">
+                  <label for="radioButton">Package: </label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="packages" value="flight" checked>
+                      flyght only
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="packages" value="full">
+                      full package
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <button id="button" type="submit" class="btn">GO !</button>
-            </form>
+                <button id="button" type="submit" class="btn">GO !</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <section id="result" class="container">
         <div id="usa" class="usa">
           <h2>Dear <span class="name"></span>!</h2>
-          <h3>For such a short vacation we offer some destination in US</h3>
+          <h3>For a short vacation we offer some destination in US</h3>
           <img src="img/usa.png" alt="image usa" />
         </div>
         <div id="northam" class="northam">
