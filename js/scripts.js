@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $("form#dest").submit(function() {
-
+    // debugger
     var name = $("input#name").val();
     var date = $("#date").val();
-    var duration = $("input#duration").val();
-    var activities = $("#activities").val();
+    var duration = parseInt($("input#duration").val());
+    var activities = parseInt($("#activities").val());
     var packages = $("input:radio[name=packages]:checked").val();
 
     $(".name").text(name);
@@ -21,19 +21,21 @@ $(document).ready(function() {
     $("#asia").hide();
     $("#world").hide();
 
-    if (duration >= 1 && duration < 6) {
+    var count = duration + activities
+
+    if (count >= 101 && count < 130) {
       $("#usa").show();
     }
-    else if (duration >= 6 && duration < 10) {
+    else if (count >= 201 && count < 230) {
       $("#northam").show();
     }
-    else if ((duration >= 10 && duration < 20) ) {
+    else if ((count >= 301 && count < 330) ) {
       $("#europe").show();
     }
-    else if ((duration >=20 && duration < 30) ) {
+    else if ((count >=301 && count < 330) ) {
       $("#asia").show();
     }
-    else if ((duration >= 30) ) {
+    else if ((count >= 330) ) {
       $("#world").show();
     }
     else {
